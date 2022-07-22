@@ -28,7 +28,6 @@ export default function App() {
               <Switch>
                 <Route path='/about' component={About}></Route>
                 <Route path='/home' component={Home}></Route>
-                <Route path='/home' component={Home}></Route>
               </Switch>
             </div>
           </div>
