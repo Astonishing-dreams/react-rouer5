@@ -26,7 +26,7 @@ export default function App() {
               <Switch>
                 <Route path='/a/about' component={About}></Route>
                 <Route path='/a/home' component={Home}></Route>
-                <Redirect to='/a/about'></Redirect>
+                <Redirect to='/about'></Redirect>
               </Switch>
             </div>
           </div>

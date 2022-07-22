@@ -1,5 +1,5 @@
 import React from 'react'
-import { Switch, Route, Redirect } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import MyNavLink from './components/MyNavLink'
@@ -26,7 +26,6 @@ export default function App() {
               <Switch>
                 <Route path='/a/about' component={About}></Route>
                 <Route path='/a/home' component={Home}></Route>
-                <Redirect to='/a/about'></Redirect>
               </Switch>
             </div>
           </div>
