@@ -19,8 +19,7 @@ export default function App() {
             <a className="list-group-item active" href="./home.html">Home</a> */}
             <MyNavLink to="/a/about">About</MyNavLink>
             <MyNavLink to="/a/home">Home</MyNavLink>
-            {/* 模糊匹配 <MyNavLink to="/a/home/b/c">Home</MyNavLink> */}
-
+            <MyNavLink to="/a/home/b/c">Home</MyNavLink>
           </div>
         </div>
         <div className="col-xs-6">
@@ -28,9 +27,8 @@ export default function App() {
             <div className="panel-body">
               {/* 注册路由 */}
               <Switch>
-                {/* 开启精准匹配 */}
-                <Route exact path='/a/about' component={About}></Route>
-                <Route exact path='/a/home' component={Home}></Route>
+                <Route path='/a/about' component={About}></Route>
+                <Route path='/a/home' component={Home}></Route>
               </Switch>
             </div>
           </div>

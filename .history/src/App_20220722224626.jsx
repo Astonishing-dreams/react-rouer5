@@ -28,9 +28,8 @@ export default function App() {
             <div className="panel-body">
               {/* 注册路由 */}
               <Switch>
-                {/* 开启精准匹配 */}
-                <Route exact path='/a/about' component={About}></Route>
-                <Route exact path='/a/home' component={Home}></Route>
+                <Route path='/a/about' component={About}></Route>
+                <Route path='/a/home' component={Home}></Route>
               </Switch>
             </div>
           </div>
