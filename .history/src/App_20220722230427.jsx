@@ -15,8 +15,8 @@ export default function App() {
       <div className="row">
         <div className="col-xs-2 col-xs-offset-2">
           <div className="list-group">
-            <MyNavLink to="/about">About</MyNavLink>
-            <MyNavLink to="/home">Home</MyNavLink>
+            <MyNavLink to="/a/about">About</MyNavLink>
+            <MyNavLink to="/a/home">Home</MyNavLink>
           </div>
         </div>
         <div className="col-xs-6">
@@ -24,9 +24,9 @@ export default function App() {
             <div className="panel-body">
               {/* 注册路由 */}
               <Switch>
-                <Route path='/about' component={About}></Route>
-                <Route path='/home' component={Home}></Route>
-                <Redirect to='/about'></Redirect>
+                <Route path='/a/about' component={About}></Route>
+                <Route path='/a/home' component={Home}></Route>
+                <Redirect to='/a/about'></Redirect>
               </Switch>
             </div>
           </div>
