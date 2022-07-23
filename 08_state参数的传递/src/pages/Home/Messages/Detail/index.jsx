@@ -7,7 +7,7 @@ const DetailData = [
     { id: "03", content: "你好，温州" },
 ]
 export default class Detail extends Component {
-
+    state参数的传递
     render() {
         // console.log(this.props);
         /* 

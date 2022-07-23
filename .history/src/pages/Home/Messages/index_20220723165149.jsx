@@ -26,7 +26,7 @@ export default class Messages extends Component {
                                     {/* <Link to={`/home/messages/detail/?id=${msg.id}&title=${msg.title}`}>{msg.title}</Link> */}
 
                                     {/* state参数的传递 */}
-                                    <Link to={{ pathname: "/home/messages/detail", state: { id: msg.id, title: msg.title } }}>{msg.title}</Link>
+                                    <Link to={`/home/messages/detail/?id=${msg.id}&title=${msg.title}`}>{msg.title}</Link>
                                 </li>
                             )
                         })
@@ -37,7 +37,7 @@ export default class Messages extends Component {
                 {/* <Route path='/home/messages/detail/:id/:title' component={Detail}></Route> */}
                 {/* 声明接受search参数 */}
                 {/* <Route path='/home/messages/detail' component={Detail}></Route> */}
-                {/* 声明接受state参数 */}
+                {/* state参数的传递 */}
                 <Route path='/home/messages/detail' component={Detail}></Route>
             </div>
         )

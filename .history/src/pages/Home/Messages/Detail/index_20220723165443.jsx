@@ -22,13 +22,13 @@ export default class Detail extends Component {
             接受state参数
             const { id, title } = qs.parse(this.props.location.search.slice(1))
          */
-        const { id, title } = this.props.location.state || {}
-        const findRight = DetailData.find(item => item.id === id) || {}
+        const { id, title } = this.props.location.state
+        const findRight = DetailData.find(item => item.id === id)
         return (
             <ul>
-                <li>ID:{id}</li>
-                <li>TITLE:{title}</li>
-                <li>CONTENT:{findRight.content}</li>
+                <li>ID:{id || 1}</li>
+                <li>TITLE:{title || 1}</li>
+                <li>CONTENT:{findRight.content || 1}</li>
             </ul>
         )
     }
