@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Detail from './Detail'
 
 export default class Messages extends Component {
@@ -19,14 +19,14 @@ export default class Messages extends Component {
                         messageArr.map(msg => {
                             return (
                                 <li key={msg.id}>
-                                    <Link to={`/home/messages/detail/${msg.id}/${msg.title}`}>{msg.title}</Link>
+                                    <Link href="/message1">{msg.title}</Link>
                                 </li>
                             )
                         })
                     }
                 </ul>
                 <hr />
-                <Route path='/home/messages/detail/:id/:title' component={Detail}></Route>
+
             </div>
         )
     }
