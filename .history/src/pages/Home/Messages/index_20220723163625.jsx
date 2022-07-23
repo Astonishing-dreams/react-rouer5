@@ -30,10 +30,7 @@ export default class Messages extends Component {
                     }
                 </ul>
                 <hr />
-                {/* 声明接受params参数 */}
-                {/* <Route path='/home/messages/detail/:id/:title' component={Detail}></Route> */}
-                {/* 声明接受search参数 */}
-                <Route path='/home/messages/detail' component={Detail}></Route>
+                <Route path='/home/messages/detail/:id/:title' component={Detail}></Route>
             </div>
         )
     }

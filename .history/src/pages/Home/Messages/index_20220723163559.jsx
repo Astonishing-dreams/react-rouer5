@@ -23,17 +23,14 @@ export default class Messages extends Component {
                                     {/* <Link to={`/home/messages/detail/${msg.id}/${msg.title}`}>{msg.title}</Link> */}
 
                                     {/* search参数的传递 */}
-                                    <Link to={`/home/messages/detail/?id=${msg.id}&title=${msg.title}`}>{msg.title}</Link>
+                                    <Link to={`/home/messages/detail/${msg.id}/${msg.title}`}>{msg.title}</Link>
                                 </li>
                             )
                         })
                     }
                 </ul>
                 <hr />
-                {/* 声明接受params参数 */}
-                {/* <Route path='/home/messages/detail/:id/:title' component={Detail}></Route> */}
-                {/* 声明接受search参数 */}
-                <Route path='/home/messages/detail' component={Detail}></Route>
+                <Route path='/home/messages/detail/:id/:title' component={Detail}></Route>
             </div>
         )
     }

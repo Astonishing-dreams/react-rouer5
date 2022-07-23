@@ -21,9 +21,9 @@ export default class Detail extends Component {
         const findRight = DetailData.find(item => item.id === id)
         return (
             <ul>
-                <li>ID:{id || 1}</li>
-                <li>TITLE:{title || 1}</li>
-                <li>CONTENT:{findRight.content || 1}</li>
+                <li>ID:{id}</li>
+                <li>TITLE:{title}</li>
+                <li>CONTENT:{findRight.content}</li>
             </ul>
         )
     }
